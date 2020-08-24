@@ -18,7 +18,7 @@
 	// Main Menu Superfish
 	var mainMenu = function() {
 
-		$('#fh5co-primary-menu').superfish({
+		$('#primary-menu').superfish({
 			delay: 0,
 			animation: {
 				opacity: 'show'
@@ -41,7 +41,7 @@
 	// Offcanvas and cloning of the main menu
 	var offcanvas = function() {
 
-		var $clone = $('#fh5co-menu-wrap').clone();
+		var $clone = $('#menu-wrap').clone();
 		$clone.attr({
 			'id' : 'offcanvas-menu'
 		});
@@ -50,15 +50,15 @@
 			'id' : ''
 		});
 
-		$('#fh5co-page').prepend($clone);
+		$('#page').prepend($clone);
 
 		// click the burger
-		$('.js-fh5co-nav-toggle').on('click', function(){
+		$('.js-nav-toggle').on('click', function(){
 
-			if ( $('body').hasClass('fh5co-offcanvas') ) {
-				$('body').removeClass('fh5co-offcanvas');
+			if ( $('body').hasClass('offcanvas') ) {
+				$('body').removeClass('offcanvas');
 			} else {
-				$('body').addClass('fh5co-offcanvas');
+				$('body').addClass('offcanvas');
 			}
 			// event.preventDefault();
 
@@ -73,8 +73,8 @@
 			$('#offcanvas-menu').css('height', w.height());
 
 			if ( w.width() > 769 ) {
-				if ( $('body').hasClass('fh5co-offcanvas') ) {
-					$('body').removeClass('fh5co-offcanvas');
+				if ( $('body').hasClass('offcanvas') ) {
+					$('body').removeClass('offcanvas');
 				}
 			}
 
@@ -87,10 +87,10 @@
 	// Click outside of the Mobile Menu
 	var mobileMenuOutsideClick = function() {
 		$(document).click(function (e) {
-	    var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
+	    var container = $("#offcanvas-menu, .js-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	      if ( $('body').hasClass('fh5co-offcanvas') ) {
-				$('body').removeClass('fh5co-offcanvas');
+	      if ( $('body').hasClass('offcanvas') ) {
+				$('body').removeClass('offcanvas');
 			}
 	    }
 		});
@@ -137,7 +137,7 @@
 	};
 
 	// Set the date we're counting down to
-	var countDownDate = new Date("Dec 28, 2017 15:37:25").getTime();
+	var countDownDate = new Date("2015-03-25T12:00:00-06:30").getTime();
 
 	// Update the count down every 1 second
 	var x = setInterval(function() {

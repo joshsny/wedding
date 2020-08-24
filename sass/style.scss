@@ -25,7 +25,7 @@ $form-group-margin-bottom: 30px;
 
 
 // Mixin
-@mixin fh5co-translateX($translatex) {
+@mixin translateX($translatex) {
 	-moz-transform: translateX($translatex);
 	-webkit-transform: translateX($translatex);
 	-ms-transform: translateX($translatex);
@@ -123,7 +123,7 @@ body {
 	color: #848484;
 	font-weight: 300;
 	overflow-x: hidden;
-	&.fh5co-offcanvas {
+	&.offcanvas {
 		overflow: hidden;
 	}
 }
@@ -167,7 +167,7 @@ figure {
   background: $brand-selection-color;
 }
 
-#fh5co-header{
+#header{
 	position: relative;
 	margin-bottom: 0;
 	z-index: 9999999;
@@ -184,7 +184,7 @@ figure {
 .header-top {
 	padding: 10px 0;
 	background: $brand-primary;
-	.fh5co-link {
+	.link {
 
 		a {
 			margin-left: 10px;
@@ -201,7 +201,7 @@ figure {
 			text-align: center;
 		}
 	}
-	.fh5co-social {
+	.social {
 		a {
 			color: rgba(255,255,255,.7);
 			font-size: 14px;
@@ -229,8 +229,8 @@ figure {
 		}
 	}
 }
-.fh5co-cover,
-.fh5co-hero {
+.cover,
+.hero {
 	position: relative;
 	height: 800px;
 	width: 100%;
@@ -238,7 +238,7 @@ figure {
 		height: 700px;
 	}
 }
-.fh5co-overlay{
+.overlay{
 	position: absolute !important;
 	width: 100%;
 	top: 0;
@@ -249,7 +249,7 @@ figure {
 	background: rgba(0, 0, 0, .4);
 }
 
-.fh5co-cover{
+.cover{
 	background-size: cover;
 	position: relative;
 	@media screen and (max-width: $screen-sm) {
@@ -401,7 +401,7 @@ figure {
 	border-left-color: #ccc;
 }
 
-#fh5co-header-section{
+#header-section{
 	padding:0;
 	position: relative;
 	left: 0;
@@ -416,7 +416,7 @@ figure {
 	width: 100%;
 }
 
-#fh5co-logo{
+#logo{
 	position: relative;
 	z-index: 2;
 	font-size: 30px;
@@ -442,7 +442,7 @@ figure {
 	
 }
 
-#fh5co-menu-wrap {
+#menu-wrap {
 	position: relative;
 	z-index: 2;
 	display: block;
@@ -452,7 +452,7 @@ figure {
 		padding: 1em .75em;
 	}
 }
-#fh5co-primary-menu {
+#primary-menu {
 	> li {
 		> ul {
 			li {
@@ -495,7 +495,7 @@ figure {
 		}
 	}	
 }
-#fh5co-primary-menu .fh5co-sub-menu {
+#primary-menu .sub-menu {
 	padding:10px 7px 10px;
 	background: $brand-white;
 	left: 0;
@@ -509,14 +509,14 @@ figure {
 	-o-box-shadow:0 5px 15px rgba(0,0,0,0.15);
 	box-shadow:0 5px 15px rgba(0,0,0,0.15);
 	> li {
-		> .fh5co-sub-menu {
+		> .sub-menu {
 			left: 100%;
 		}	
 	}
 	
 }
 
-#fh5co-primary-menu .fh5co-sub-menu:before {
+#primary-menu .sub-menu:before {
 	position:absolute;
 	top:-9px;
 	left:20px;
@@ -525,7 +525,7 @@ figure {
 	content:'';
 }
 
-#fh5co-primary-menu .fh5co-sub-menu:after {
+#primary-menu .sub-menu:after {
 	position:absolute;
 	top:-8px;
 	left:21px;
@@ -538,12 +538,12 @@ figure {
 	content:'';
 }
 
-#fh5co-primary-menu .fh5co-sub-menu .fh5co-sub-menu:before {
+#primary-menu .sub-menu .sub-menu:before {
 	top:6px;
 	left:100%;
 }
 
-#fh5co-primary-menu .fh5co-sub-menu .fh5co-sub-menu:after {
+#primary-menu .sub-menu .sub-menu:after {
 	top:7px;
 	right:100%;
 	border: none!important;
@@ -560,7 +560,7 @@ figure {
 		display:none;	
 	}
 }
-#fh5co-primary-menu .fh5co-sub-menu a {
+#primary-menu .sub-menu a {
 	letter-spacing: 0;
 	padding:0 15px;
 	font-size:18px;
@@ -573,22 +573,22 @@ figure {
 	}
 }
 
-#fh5co-couple,
-#fh5co-countdown,
-#fh5co-groom-bride,
-#fh5co-blog-section,
-#fh5co-started,
-#fh5co-when-where,
-#fh5co-guest,
-#fh5co-gallery,
-.fh5co-content-section {
+#couple,
+#countdown,
+#groom-bride,
+#blog-section,
+#started,
+#when-where,
+#guest,
+#gallery,
+.content-section {
 	padding: 7em 0;
 	@media screen and (max-width: $screen-sm) {
 		padding: 4em 0;
 	}
 
 }
-.fh5co-section-gray{
+.section-gray{
 	background: $brand-light-color;
 }
 
@@ -607,7 +607,7 @@ figure {
 	}
 }
 
-#fh5co-couple{
+#couple{
 	img{
 		margin-bottom: 20px;
 		@include border-radius(50%);
@@ -628,7 +628,7 @@ figure {
 	}
 }
 
-#fh5co-countdown{
+#countdown{
 	background: $brand-primary;
 	.countdown{
 		margin-bottom: 0;
@@ -660,7 +660,7 @@ figure {
 	h3{
 		font-size: 40px;
 	}
-	.fh5co-social-icons{
+	.social-icons{
 		a{
 			&:first-child{
 				padding-left: 0;
@@ -699,7 +699,7 @@ figure {
 }
 
 
-#fh5co-started {
+#started {
 	position: relative;
 	background-size: cover;
 	background-position: bottom center;
@@ -820,7 +820,7 @@ figure {
 	}
 }
 
-.fh5co-blog{
+.blog{
 	margin-bottom: 60px;
 	a{
 		img{
@@ -894,7 +894,7 @@ figure {
 	}
 }
 
-.fh5co-social-icons {
+.social-icons {
 	> a {
 		padding: 4px 10px;
 		color: $brand-primary;
@@ -964,27 +964,27 @@ figure {
 
 
 
-#fh5co-wrapper {
+#wrapper {
 	overflow-x: hidden;
 	position: relative;
 }
-.fh5co-offcanvas {
+.offcanvas {
 	overflow: hidden;
-	#fh5co-wrapper {
+	#wrapper {
 		overflow: hidden!important;
 	}
 }
 
-#fh5co-page {
+#page {
 	position: relative;
 	@include transition(.5s);
-	.fh5co-offcanvas & {
-		@include fh5co-translateX(-240px);
+	.offcanvas & {
+		@include translateX(-240px);
 	}
 }
 
 // offcanvas
-#fh5co-menu-wrap {
+#menu-wrap {
 	@media screen and (max-width: $screen-sm) {
 		display: none;
 	}
@@ -1017,7 +1017,7 @@ figure {
 					color: $brand-primary;
 				}
 			}
-			> .fh5co-sub-menu {
+			> .sub-menu {
 				margin-top: 9px;
 				padding-left: 20px;
 			}
@@ -1027,7 +1027,7 @@ figure {
 				}
 			}
 		}
-		.fh5co-sub-menu {
+		.sub-menu {
 			display: block!important;
 		}
 	}
@@ -1036,7 +1036,7 @@ figure {
 
 
 // Burger Menu
-.fh5co-nav-toggle {
+.nav-toggle {
  
   cursor: pointer;
   text-decoration: none;
@@ -1091,22 +1091,22 @@ figure {
   }
 }
 
-.fh5co-nav-toggle i::before {
+.nav-toggle i::before {
   top: -7px;
 }
-.fh5co-nav-toggle i::after {
+.nav-toggle i::after {
   bottom: -7px;
 }
-.fh5co-nav-toggle:hover i::before {
+.nav-toggle:hover i::before {
   top: -10px;
 }
-.fh5co-nav-toggle:hover i::after {
+.nav-toggle:hover i::after {
   bottom: -10px;
 }
-.fh5co-nav-toggle.active i {
+.nav-toggle.active i {
 	background: transparent;
 }
-.fh5co-nav-toggle.active i::before {
+.nav-toggle.active i::before {
   top:0;
   -webkit-transform: rotateZ(45deg);
      -moz-transform: rotateZ(45deg);
@@ -1114,7 +1114,7 @@ figure {
        -o-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
 }
-.fh5co-nav-toggle.active i::after {
+.nav-toggle.active i::after {
   bottom:0;
   -webkit-transform: rotateZ(-45deg);
      -moz-transform: rotateZ(-45deg);
@@ -1122,7 +1122,7 @@ figure {
        -o-transform: rotateZ(-45deg);
           transform: rotateZ(-45deg);
 }
-.fh5co-nav-toggle {
+.nav-toggle {
   	position: absolute;
   	top: 0px;
 	right: 0px;
@@ -1210,7 +1210,7 @@ figure {
 .js #loader { 
 	display: block; position: absolute; left: 100px; top: 0; 
 }
-.fh5co-loader {
+.loader {
 	position: fixed;
 	left: 0px;
 	top: 0px;
