@@ -575,6 +575,10 @@ figure {
   background: #f6faf7;
 }
 
+.section-highlight {
+  background: #ffcabf;
+}
+
 .heading-section {
   padding-bottom: 1em;
   margin-bottom: 3em;
@@ -700,7 +704,6 @@ figure {
 #started {
   position: relative;
   background-size: cover;
-  background-position: bottom center;
   background-repeat: no-repeat;
 }
 
@@ -834,6 +837,12 @@ figure {
 
 .blog a img {
   width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .img-responsive {
+    min-height: 196px;
+  }
 }
 
 @media screen and (max-width: 768px) {
